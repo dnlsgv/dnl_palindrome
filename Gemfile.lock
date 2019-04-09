@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dnl_palindrome (0.1.0)
+    dnl_palindrome (0.1.25)
 
 GEM
   remote: https://rubygems.org/
