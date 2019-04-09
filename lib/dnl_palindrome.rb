@@ -5,7 +5,7 @@ require "dnl_palindrome/version"
 #   # Your code goes here...
 # end
 
-class String
+module DnlPalindrome
 
 	def palindrome?
 		processed_content == processed_content.reverse
@@ -24,7 +24,15 @@ class String
 
 	private
 		def processed_content
-			self.downcase.letters
+			self.to_s.downcase.letters
 		end
 
+end
+
+class String
+	include DnlPalindrome
+end
+
+class Integer
+	include DnlPalindrome
 end
