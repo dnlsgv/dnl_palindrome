@@ -6,6 +6,15 @@ class DnlPalindromeTest < Minitest::Test
   end
 
   def test_it_does_something_useful
-    assert false
+    assert true
+  end
+
+
+  def test_non_palindrome
+  	assert !"apple".palindrome?
+  end
+
+  def test_literal_palindrome
+  	assert "racecar".palindrome?
   end
 end
